@@ -1,0 +1,115 @@
+package mask_detection_vr1;
+
+import javax.swing.JFrame;
+import org.opencv.core.Core;
+import org.opencv.core.Mat;
+import org.opencv.core.MatOfRect;
+import org.opencv.core.Point;
+import org.opencv.core.Rect;
+import org.opencv.core.Scalar;
+//import org.opencv.highgui.HighGui;
+import org.opencv.imgproc.Imgproc;
+import org.opencv.videoio.VideoCapture;
+
+public class MainFrame extends JFrame{
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
+	private  FaceDetection facedetector;
+	private CascadeLoader faceCascade;
+	private CascadeLoader mouthCascade;
+	private  MouthDetection mouthdetector;
+	private  CameraPanel cameraPanel;
+	private Scalar RedColor = new Scalar(111, 71, 239);
+	private Scalar GreenColor = new Scalar(0, 255, 0, 255);
+	private Scalar WhiteColor = new Scalar(255, 255, 255);
+	public MainFrame() {
+		
+		super("Face Mask Detector");
+	
+	System.loadLibrary(Core.NATIVE_LIBRARY_NAME);
+	
+	//create a cascade
+    faceCascade = new CascadeLoader("D:\\PROJECT\\mask_detection_vr1\\xml\\face.xml");
+    
+    mouthCascade = new CascadeLoader("D:\\PROJECT\\mask_detection_vr1\\xml\\Mouth.xml");
+	
+	facedetector =new FaceDetection(faceCascade);
+	mouthdetector =new MouthDetection(mouthCascade);
+	
+	
+	
+	 cameraPanel=new CameraPanel();
+	
+	 setContentPane(cameraPanel);
+	 
+	 setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+	 setSize(700,500);
+	 setLocationRelativeTo(this);
+	 setVisible(true);
+	}
+	
+	public void displayScreen(){
+	Mat webcamImage =new Mat();
+	VideoCapture videoCapture =new VideoCapture(0);
+	
+	if(videoCapture.isOpened()) {
+		while(true) {
+		videoCapture.read(webcamImage);
+		
+		if(!webcamImage.empty()) {
+
+			setSize(webcamImage.width()+50,webcamImage.height()+70);
+			MatOfRect Faces=facedetector.detectFace(webcamImage);
+
+			Rect[] FaceRects = Faces.toArray();
+
+	            //now let's move to the mouth detection
+	            if(FaceRects.length>0) {
+	                for (Rect r : FaceRects) {
+
+	                    //handle the dimension of the canvas
+	                    Point startingPoint = new Point(r.tl().x-1,r.br().y);
+	                    Point endingPoint = new Point(r.br().x,r.br().y+25);
+
+	                    double FontScale = (r.br().x/r.tl().x)/3;
+
+	                    MatOfRect mouth = mouthdetector.detectMouth(webcamImage,r);
+	                    Rect[] mouthRects = mouth.toArray();
+
+
+	                    if(mouthRects.length < 0.5 ){
+	                        //draw a green canvas
+	                        Imgproc.rectangle(webcamImage, r.tl(), r.br(),GreenColor, 3);
+	                        //draw background
+	                        Imgproc.rectangle(webcamImage,startingPoint,endingPoint,GreenColor,-1);
+	                        //put the message
+	                        Imgproc.putText(webcamImage,"Thank you",new Point(r.tl().x+5,r.br().y+18),4,FontScale,WhiteColor,1);
+	                    }
+
+	                    else if(mouthRects.length > 1 ){
+	                        //draw a red canvas
+	                        Imgproc.rectangle(webcamImage, r.tl(), r.br(), RedColor, 3);
+	                        //draw background
+	                        Imgproc.rectangle(webcamImage,startingPoint,endingPoint,RedColor,-1);
+	                        //put the message
+	                        Imgproc.putText(webcamImage,"Wear your mask!",new Point(r.tl().x+5,r.br().y+18),4,FontScale,WhiteColor,1);
+	                    }
+	                }
+	            }
+		       			
+			cameraPanel.convertMatToImage(webcamImage);
+		    cameraPanel.repaint();
+		
+		} 
+		else {
+			System.out.println("ERROR");
+			break;
+}		
+}		
+}	
+}
+	
+} 
+

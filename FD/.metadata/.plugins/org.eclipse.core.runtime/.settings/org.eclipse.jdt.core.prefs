@@ -1,0 +1,17 @@
+eclipse.preferences.version=1
+org.eclipse.jdt.core.builder.resourceCopyExclusionFilter=
+org.eclipse.jdt.core.classpathVariable.ECLIPSE_HOME=D\:/apks/eclipse/
+org.eclipse.jdt.core.classpathVariable.JRE_LIB=D\:/apks/openjdk-11_windows-x64_bin/jdk-11/lib/jrt-fs.jar
+org.eclipse.jdt.core.classpathVariable.JRE_SRC=D\:/apks/openjdk-11_windows-x64_bin/jdk-11/lib/src.zip
+org.eclipse.jdt.core.classpathVariable.JRE_SRCROOT=
+org.eclipse.jdt.core.classpathVariable.JUNIT_HOME=C\:/Users/MOHAMED BABACHEKHE/.p2/pool/plugins/org.junit_4.13.0.v20200204-1500.jar
+org.eclipse.jdt.core.classpathVariable.M2_REPO=C\:/Users/MOHAMED BABACHEKHE/.m2/repository
+org.eclipse.jdt.core.codeComplete.visibilityCheck=enabled
+org.eclipse.jdt.core.compiler.codegen.inlineJsrBytecode=enabled
+org.eclipse.jdt.core.compiler.codegen.targetPlatform=14
+org.eclipse.jdt.core.compiler.compliance=14
+org.eclipse.jdt.core.compiler.problem.assertIdentifier=error
+org.eclipse.jdt.core.compiler.problem.enumIdentifier=error
+org.eclipse.jdt.core.compiler.release=enabled
+org.eclipse.jdt.core.compiler.source=14
+org.eclipse.jdt.core.userLibrary.OpenCV3.0.0=<?xml version\="1.0" encoding\="UTF-8"?>\r\n<userlibrary systemlibrary\="false" version\="2">\r\n\t<archive path\="D\:/apks/OpenCv3.0/opencv/build/java/opencv-300.jar">\r\n\t\t<attributes>\r\n\t\t\t<attribute name\="org.eclipse.jdt.launching.CLASSPATH_ATTR_LIBRARY_PATH_ENTRY" value\="D\:/apks/OpenCv3.0/opencv/build/java/x64"/>\r\n\t\t</attributes>\r\n\t</archive>\r\n</userlibrary>\r\n

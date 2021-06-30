@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<launchConfiguration type="org.eclipse.jdt.launching.localJavaApplication">
+    <listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_PATHS">
+        <listEntry value="/Bank-Management-System/Bank/src/application/Main.java"/>
+    </listAttribute>
+    <listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_TYPES">
+        <listEntry value="1"/>
+    </listAttribute>
+    <listAttribute key="org.eclipse.eclemma.core.SCOPE_IDS">
+        <listEntry value="=Bank-Management-System/D:\/apks\/openjfx\/javafx-sdk-11.0.2\/lib\/javafx.swing.jar=/org.eclipse.jdt.launching.CLASSPATH_ATTR_LIBRARY_PATH_ENTRY=/D:\/apks\/openjfx\/javafx-sdk-11.0.2\/lib=/=/org.eclipse.jdt.launching.CLASSPATH_ATTR_LIBRARY_PATH_ENTRY=/D:\/apks\/openjfx\/javafx-sdk-11.0.2\/bin=/"/>
+        <listEntry value="=Bank-Management-System/D:\/apks\/openjfx\/javafx-sdk-11.0.2\/lib\/javafx-swt.jar=/org.eclipse.jdt.launching.CLASSPATH_ATTR_LIBRARY_PATH_ENTRY=/D:\/apks\/openjfx\/javafx-sdk-11.0.2\/lib=/=/org.eclipse.jdt.launching.CLASSPATH_ATTR_LIBRARY_PATH_ENTRY=/D:\/apks\/openjfx\/javafx-sdk-11.0.2\/bin=/"/>
+        <listEntry value="=Bank-Management-System/D:\/apks\/openjfx\/javafx-sdk-11.0.2\/lib\/javafx.graphics.jar=/org.eclipse.jdt.launching.CLASSPATH_ATTR_LIBRARY_PATH_ENTRY=/D:\/apks\/openjfx\/javafx-sdk-11.0.2\/lib=/=/org.eclipse.jdt.launching.CLASSPATH_ATTR_LIBRARY_PATH_ENTRY=/D:\/apks\/openjfx\/javafx-sdk-11.0.2\/bin=/"/>
+        <listEntry value="=Bank-Management-System/D:\/apks\/openjfx\/javafx-sdk-11.0.2\/lib\/javafx.fxml.jar=/org.eclipse.jdt.launching.CLASSPATH_ATTR_LIBRARY_PATH_ENTRY=/D:\/apks\/openjfx\/javafx-sdk-11.0.2\/lib=/=/org.eclipse.jdt.launching.CLASSPATH_ATTR_LIBRARY_PATH_ENTRY=/D:\/apks\/openjfx\/javafx-sdk-11.0.2\/bin=/"/>
+        <listEntry value="=Bank-Management-System/D:\/apks\/openjfx\/javafx-sdk-11.0.2\/lib\/javafx.web.jar=/org.eclipse.jdt.launching.CLASSPATH_ATTR_LIBRARY_PATH_ENTRY=/D:\/apks\/openjfx\/javafx-sdk-11.0.2\/lib=/=/org.eclipse.jdt.launching.CLASSPATH_ATTR_LIBRARY_PATH_ENTRY=/D:\/apks\/openjfx\/javafx-sdk-11.0.2\/bin=/"/>
+        <listEntry value="=Bank-Management-System/D:\/apks\/openjfx\/javafx-sdk-11.0.2\/lib\/javafx.controls.jar=/org.eclipse.jdt.launching.CLASSPATH_ATTR_LIBRARY_PATH_ENTRY=/D:\/apks\/openjfx\/javafx-sdk-11.0.2\/lib=/=/org.eclipse.jdt.launching.CLASSPATH_ATTR_LIBRARY_PATH_ENTRY=/D:\/apks\/openjfx\/javafx-sdk-11.0.2\/legal\/javafx.controls=/"/>
+        <listEntry value="=Bank-Management-System/D:\/MySQL\/Connector J 8.0\/mysql-connector-java-8.0.22.jar"/>
+        <listEntry value="=Bank-Management-System/D:\/apks\/openjfx\/javafx-sdk-11.0.2\/lib\/javafx.base.jar=/org.eclipse.jdt.launching.CLASSPATH_ATTR_LIBRARY_PATH_ENTRY=/D:\/apks\/openjfx\/javafx-sdk-11.0.2\/lib=/=/org.eclipse.jdt.launching.CLASSPATH_ATTR_LIBRARY_PATH_ENTRY=/D:\/apks\/openjfx\/javafx-sdk-11.0.2\/bin=/"/>
+        <listEntry value="=Bank-Management-System/D:\/apks\/openjfx\/javafx-sdk-11.0.2\/lib\/javafx.media.jar=/org.eclipse.jdt.launching.CLASSPATH_ATTR_LIBRARY_PATH_ENTRY=/D:\/apks\/openjfx\/javafx-sdk-11.0.2\/lib=/=/org.eclipse.jdt.launching.CLASSPATH_ATTR_LIBRARY_PATH_ENTRY=/D:\/apks\/openjfx\/javafx-sdk-11.0.2\/bin=/"/>
+        <listEntry value="=Bank-Management-System/Bank\/src"/>
+    </listAttribute>
+    <booleanAttribute key="org.eclipse.jdt.launching.ATTR_EXCLUDE_TEST_CODE" value="true"/>
+    <booleanAttribute key="org.eclipse.jdt.launching.ATTR_SHOW_CODEDETAILS_IN_EXCEPTION_MESSAGES" value="true"/>
+    <booleanAttribute key="org.eclipse.jdt.launching.ATTR_USE_CLASSPATH_ONLY_JAR" value="false"/>
+    <stringAttribute key="org.eclipse.jdt.launching.JRE_CONTAINER" value="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-14"/>
+    <stringAttribute key="org.eclipse.jdt.launching.MAIN_TYPE" value="application.Main"/>
+    <listAttribute key="org.eclipse.jdt.launching.MODULEPATH">
+        <listEntry value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; standalone=&quot;no&quot;?&gt;&#13;&#10;&lt;runtimeClasspathEntry containerPath=&quot;org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/javakit&quot; path=&quot;4&quot; type=&quot;4&quot;/&gt;&#13;&#10;"/>
+    </listAttribute>
+    <stringAttribute key="org.eclipse.jdt.launching.MODULE_NAME" value="Bank-Management-System"/>
+    <stringAttribute key="org.eclipse.jdt.launching.PROJECT_ATTR" value="Bank-Management-System"/>
+    <stringAttribute key="org.eclipse.jdt.launching.VM_ARGUMENTS" value="--module-path &quot;D:\apks\openjfx\javafx-sdk-11.0.2\lib&quot; --add-modules javafx.controls,javafx.fxml"/>
+</launchConfiguration>
